@@ -1,9 +1,8 @@
-
 # Functional programming
 
-Certainly, one of the first hurdles, if not the first, is the paradigm of programming Haskell embraces: **Functional programming** at its core means building programs by uniquely applying functions to arguments. A python user, for example, has the *for* and *while* constructs and cannot live without them. In contrast, functional programming encourages to use the **recursion**.
+Certainly, one of the first hurdles, if not the first, is the paradigm of programming Haskell embraces: **functional programming** at its core means building programs by uniquely applying functions to arguments. A python user, for example, has the *for* and *while* constructs and cannot live without them. In contrast, functional programming encourages the usage of **recursion**.
 
-To illustrate both those sides, consider how differently this simple task is faced: for a list of numbers, write a function that returns the sum of its elements. A python user, for example, finds natural to write this
+For instance, consider how differently this simple task is faced: for a list of numbers, write a function that returns the sum of its elements. A python user, for example, finds natural to write this
 ```python
 # There is a variable initialized as 0
 # which is incremented at every step of
@@ -26,7 +25,7 @@ A *seasoned* functional programmer seeks brevity, too.
 sum = foldl (+) 0 
 ```
 
-## A quick glance at Haskell
+## A first glance at Haskell
 
 In Haskell, things have **types**, that is *labels* attached to objects that convey their nature. For instance, ```1``` is an ```integer```, ```"hello"``` is a ```string```, the process that takes a natural number and returns it successor is a ```function from natural numbers to natural numbers```. It's better to have some notation for that: we write
 ```haskell
@@ -37,4 +36,3 @@ to mean that the thing ```x``` has type ```T```. As we said earlier, functions h
 f :: X -> Y
 ```
 to say that ```f``` is a function that takes inputs of type ```X``` and outputs things having type ```Y```.
-
