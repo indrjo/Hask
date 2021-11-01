@@ -4,9 +4,9 @@ Certainly, one of the first hurdles, if not the first, is the paradigm of progra
 
 For instance, consider how differently this simple task is faced: for a list of numbers, write a function that returns the sum of its elements. A python user, for example, finds natural to write this
 ```python
-# There is a variable initialized as 0
-# which is incremented at every step of
-# of a for-loop. 
+# There is a variable initialized
+# as 0 which is updated at every
+# step of some for-loop. 
 def sum(xs):
   s = 0
   for x in xs:
