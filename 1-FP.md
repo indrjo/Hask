@@ -1,6 +1,8 @@
 # Functional programming
 
-Certainly, one of the first hurdles, if not the first, is the paradigm of programming Haskell embraces: **functional programming** at its core means building programs by uniquely applying functions to arguments. A python user, for example, has the *for* and *while* constructs and cannot live without them. In contrast, functional programming encourages the usage of **recursion**.
+One of the first hurdles one encounters is the paradigm of programming Haskell embraces: **functional programming** means building programs by uniquely applying functions to arguments. How is that possible?
+
+A python user, for example, has the *for* and *while* constructs and cannot live without them. In contrast, functional programming encourages the usage of **recursion**.
 
 For instance, consider how differently this simple task is faced: for a list of numbers, write a function that returns the sum of its elements. A python user, for example, finds natural to write this
 ```python
@@ -21,9 +23,11 @@ sum (x:xs) = x + sum xs
 ```
 A *seasoned* functional programmer seeks brevity, too.
 ```haskell
--- A point-free definition here.
-sum = foldl (+) 0 
+-- A more dense (and cryptic)
+-- definition here.
+sum = foldr (+) 0 
 ```
+
 
 ## A first glance at Haskell
 
